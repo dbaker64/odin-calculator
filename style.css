@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url('fonts/Digital-7.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Digital-7.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/Digital-7.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/Digital-7.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/Digital-7.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('fonts/Digital-7.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --calc-width: 30vw;
+    --calc-height: 50vh;
+}
+
+button {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#calculator-container {
+    width: var(--calc-width);
+    height: var(--calc-height);
+    max-width: var(--calc-width);
+    max-height: var(--calc-height);
+    min-height: var(--calc-height);
+    min-width: var(--calc-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-style: solid;
+    border-width: 5px;
+    background-color: black;
+}
+
+#display {
+    text-align: right;
+    font-size: 40px;
+    font-family: "Digital-7", Arial, monospace;
+    padding: 20px 0px;
+    padding-right: 5px;
+    background-color: lightgrey;
+    margin: 1px;
+}
+
+#lower-content-container {
+    display: flex;
+}
+
+#num-keys {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.num-row {
+    display: flex;
+    width: 100%;
+}
+
+.num {
+    width: 100%;
+}
+
+#operation-keys {
+    display: flex;
+    flex-direction: column;
+}
+
+.op {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: red;
+}
+
+#equal-sign {
+    background-color: yellow;
+}
