@@ -115,7 +115,17 @@ function multiply(operand1, operand2){
 function divide(operand1, operand2){
     if(operand2 === 0){
         display.textContent = "l bozo";
-        return "whaaat, you thought the console was gonna work???";
+        console.log("whaaat, you thought the console was gonna work???");
+        while(true){
+            let num = getRandomInt(25);
+            if(num > 0 && num < 11){
+                console.log("lololololololololol -Abby");
+            }else if(num > 10 && num < 25){
+                console.log("FOOL!!!! You cannot divide by 0");
+            }else{
+                console.log("This will continue forever!!!! Mwahahahahaha");
+            }
+        }
     }
     console.log("divide");
     return operand1 / operand2;
@@ -159,3 +169,7 @@ function clearDisplay() {
 function updateDisplay(value) {
     display.textContent = value;
 }
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
